@@ -5,15 +5,15 @@
     
     <title>搭建 hexo | 我的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="搭建 hexo官方文档 配置 icarus 主题github地址 一些坑1.访问时点击链接变为下载 原因是 _config.yml 中 permalink配置文件少了最后面的&#x2F; 正确: permalink: :category&#x2F;:title&#x2F; 错误: permalink: :category&#x2F;:title&#x2F;   2.配置分类和标签文档中说明   123If you want enable the">
+    <meta name="description" content="使用hexo 主题icarus 搭建自己的个人博客">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建 hexo">
 <meta property="og:url" content="http:&#x2F;&#x2F;xfh090486.github.io&#x2F;other&#x2F;hexo&#x2F;">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="搭建 hexo官方文档 配置 icarus 主题github地址 一些坑1.访问时点击链接变为下载 原因是 _config.yml 中 permalink配置文件少了最后面的&#x2F; 正确: permalink: :category&#x2F;:title&#x2F; 错误: permalink: :category&#x2F;:title&#x2F;   2.配置分类和标签文档中说明   123If you want enable the">
+<meta property="og:description" content="使用hexo 主题icarus 搭建自己的个人博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2019-12-17T23:34:12.000Z">
-<meta property="article:modified_time" content="2019-12-20T03:19:48.028Z">
+<meta property="article:modified_time" content="2019-12-20T03:33:31.323Z">
 <meta property="article:author" content="谢栋">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -271,7 +271,10 @@
                     <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#搭建-hexo"><span class="toc-number">1.</span> <span class="toc-text">搭建 hexo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#配置-icarus-主题"><span class="toc-number">2.</span> <span class="toc-text">配置 icarus 主题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一些坑"><span class="toc-number">3.</span> <span class="toc-text">一些坑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-访问时点击链接变为下载"><span class="toc-number">3.0.1.</span> <span class="toc-text">1.访问时点击链接变为下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-配置分类和标签"><span class="toc-number">3.0.2.</span> <span class="toc-text">2.配置分类和标签</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一些配置"><span class="toc-number">4.</span> <span class="toc-text">一些配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用命令"><span class="toc-number">5.</span> <span class="toc-text">使用命令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#说明"><span class="toc-number">6.</span> <span class="toc-text">说明</span></a></li></ol>
                 </div>
             
-            <h1 id="搭建-hexo"><a href="#搭建-hexo" class="headerlink" title="搭建 hexo"></a>搭建 hexo</h1><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档</a></p>
+            <p>使用hexo 主题icarus 搭建自己的个人博客 </p>
+<a id="more"></a>
+
+<h1 id="搭建-hexo"><a href="#搭建-hexo" class="headerlink" title="搭建 hexo"></a>搭建 hexo</h1><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档</a></p>
 <h1 id="配置-icarus-主题"><a href="#配置-icarus-主题" class="headerlink" title="配置 icarus 主题"></a>配置 icarus 主题</h1><p><a href="https://github.com/dyc87112/hexo-theme-icarus" target="_blank" rel="noopener">github地址</a></p>
 <h1 id="一些坑"><a href="#一些坑" class="headerlink" title="一些坑"></a>一些坑</h1><h3 id="1-访问时点击链接变为下载"><a href="#1-访问时点击链接变为下载" class="headerlink" title="1.访问时点击链接变为下载"></a>1.访问时点击链接变为下载</h3><p> 原因是 _config.yml 中 permalink配置文件少了最后面的/<br> 正确: permalink: :category/:title/<br> 错误: permalink: :category/:title/  </p>
 <h3 id="2-配置分类和标签"><a href="#2-配置分类和标签" class="headerlink" title="2.配置分类和标签"></a>2.配置分类和标签</h3><p>文档中说明  </p>
@@ -282,6 +285,8 @@
 <p><strong>注意这里的配置不是 type: “categories” / type: “tags”</strong></p>
 <h1 id="一些配置"><a href="#一些配置" class="headerlink" title="一些配置"></a>一些配置</h1><ul>
 <li>开启目录 toc: true</li>
+<li>开启评论 comments: true  要装评论插件</li>
+<li>折叠显示 使用 <code>&lt;!-- more --&gt;</code> 标记就会显示查看更多 </li>
 </ul>
 <h1 id="使用命令"><a href="#使用命令" class="headerlink" title="使用命令"></a>使用命令</h1><ul>
 <li><p>hexo clean</p>
@@ -319,7 +324,7 @@
 
 </div>
 
-    <a data-url="http://xfh090486.github.io/other/hexo/" data-id="ck4dlbssk0003q4vvggqyghx6" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://xfh090486.github.io/other/hexo/" data-id="ck4dndcul000300vvevc5h49k" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
