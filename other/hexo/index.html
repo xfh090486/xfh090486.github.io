@@ -3,14 +3,19 @@
 <head>
     <meta charset="utf-8">
     
-    <title>我的博客</title>
+    <title>搭建 hexo | 我的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="我的博客">
-<meta property="og:url" content="http:&#x2F;&#x2F;xfh090486.github.io&#x2F;">
+    <meta name="description" content="搭建 hexo官方文档 配置 icarus 主题github地址 一些坑1.访问时点击链接变为下载 原因是 _config.yml 中 permalink配置文件少了最后面的&#x2F; 正确: permalink: :category&#x2F;:title&#x2F; 错误: permalink: :category&#x2F;:title&#x2F;   2.配置分类和标签文档中说明   123If you want enable the">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建 hexo">
+<meta property="og:url" content="http:&#x2F;&#x2F;xfh090486.github.io&#x2F;other&#x2F;hexo&#x2F;">
 <meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="搭建 hexo官方文档 配置 icarus 主题github地址 一些坑1.访问时点击链接变为下载 原因是 _config.yml 中 permalink配置文件少了最后面的&#x2F; 正确: permalink: :category&#x2F;:title&#x2F; 错误: permalink: :category&#x2F;:title&#x2F;   2.配置分类和标签文档中说明   123If you want enable the">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-12-17T23:34:12.000Z">
+<meta property="article:modified_time" content="2019-12-20T03:19:48.028Z">
 <meta property="article:author" content="谢栋">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
     
 
@@ -218,147 +223,15 @@
 </aside>
 
             
-            <section id="main">
-    <article id="post-other/markdown" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-other/hexo" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
             <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/other/markdown/">markdown 语法</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/other/markdown/">
-            <time datetime="2019-12-18T23:34:12.000Z" itemprop="datePublished">2019-12-19</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%AE%B0/">技术杂记</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/markdown/" rel="tag">markdown</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h1 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h1><h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://xfh090486.github.io/other/markdown/" data-id="ck4dlbstf0008q4vv9cmo9k6y" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://xfh090486.github.io/other/markdown/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://xfh090486.github.io/other/markdown/">评论</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-other/hexo" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/other/hexo/">搭建 hexo</a>
+        <h1 class="article-title" itemprop="name">
+            搭建 hexo
         </h1>
     
 
@@ -392,6 +265,11 @@
         
         <div class="article-entry" itemprop="articleBody">
         
+            
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">文章目录</strong>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#搭建-hexo"><span class="toc-number">1.</span> <span class="toc-text">搭建 hexo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#配置-icarus-主题"><span class="toc-number">2.</span> <span class="toc-text">配置 icarus 主题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一些坑"><span class="toc-number">3.</span> <span class="toc-text">一些坑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-访问时点击链接变为下载"><span class="toc-number">3.0.1.</span> <span class="toc-text">1.访问时点击链接变为下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-配置分类和标签"><span class="toc-number">3.0.2.</span> <span class="toc-text">2.配置分类和标签</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一些配置"><span class="toc-number">4.</span> <span class="toc-text">一些配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用命令"><span class="toc-number">5.</span> <span class="toc-text">使用命令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#说明"><span class="toc-number">6.</span> <span class="toc-text">说明</span></a></li></ol>
+                </div>
             
             <h1 id="搭建-hexo"><a href="#搭建-hexo" class="headerlink" title="搭建 hexo"></a>搭建 hexo</h1><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档</a></p>
 <h1 id="配置-icarus-主题"><a href="#配置-icarus-主题" class="headerlink" title="配置 icarus 主题"></a>配置 icarus 主题</h1><p><a href="https://github.com/dyc87112/hexo-theme-icarus" target="_blank" rel="noopener">github地址</a></p>
@@ -515,8 +393,36 @@
         </footer>
     </div>
     
+        
+<nav id="article-nav">
+    
+        <a href="/other/markdown/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    markdown 语法
+                
+            </div>
+        </a>
+    
+    
+</nav>
+
+
+    
 </article>
 
+
+    
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
 
 </section>
             
@@ -640,11 +546,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'http://xfh090486.github.io/other/hexo/';
+        
+        this.page.identifier = 'other/hexo';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/count.js';
+        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
